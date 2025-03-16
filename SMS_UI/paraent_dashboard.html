@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+              <div class="flex items-center">
+                     <img src="img/logo.jpg" alt="School Logo" class="h-12 w-12 mr-2 rounded-full">
+                     <h1 class="text-xl font-bold">Parent Dashboard</h1>
+                 </div>
+            <nav class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-500">Home</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Profile</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="container mx-auto mt-4">
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold mb-4">Welcome, <span id="parent-name">Parent Name</span></h2>
+            <p class="mb-4">Here you can view your children's information and their performance.</p>
+
+            <!-- Children Information -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">Children Information</h3>
+                <ul class="space-y-4">
+                    <li class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-bold">Child Name: John Doe</h4>
+                        <p><strong>Grade:</strong> 5</p>
+                        <p><strong>School:</strong> ABC Elementary School</p>
+                    </li>
+                    <li class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-bold">Child Name: Jane Doe</h4>
+                        <p><strong>Grade:</strong> 3</p>
+                        <p><strong>School:</strong> ABC Elementary School</p>
+                    </li>
+                    <li class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold">Announcements</h4>
+                            <p>No new announcements today.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Performance/Grades Section -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">Performance/Grades</h3>
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 px-4 py-2">Child Name</th>
+                            <th class="border border-gray-300 px-4 py-2">Course</th>
+                            <th class="border border-gray-300 px-4 py-2">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">John Doe</td>
+                            <td class="border border-gray-300 px-4 py-2">Mathematics</td>
+                            <td class="border border-gray-300 px-4 py-2">A</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">John Doe</td>
+                            <td class="border border-gray-300 px-4 py-2">Science</td>
+                            <td class="border border-gray-300 px-4 py-2">B+</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Jane Doe</td>
+                            <td class="border border-gray-300 px-4 py-2">Mathematics</td>
+                            <td class="border border-gray-300 px-4 py-2">B</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Jane Doe</td>
+                            <td class="border border-gray-300 px-4 py-2">Art</td>
+                            <td class="border border-gray-300 px-4 py-2">A-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+                        <!-- Download Report Section -->
+                        <div>
+                            <h3 class="text-xl font-semibold">Download Reports</h3>
+                            <p class="mb-2">You can download the report cards for your children using the links below:</p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    <a href="#" class="text-blue-500 hover:underline">Download Report Card for John Doe</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-blue-500 hover:underline">Download Report Card for Jane Doe</a>
+                                </li>
+                            </ul>
+                        </div>

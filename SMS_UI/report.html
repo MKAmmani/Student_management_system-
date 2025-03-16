@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Reports</h1>
+
+        <!-- Report Types -->
+        <div class="bg-white p-4 rounded shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-2">Select Report Type</h2>
+            <div class="space-y-2">
+                <label class="inline-flex items-center">
+                    <input type="radio" name="reportType" value="studentPerformance" class="form-radio text-blue-600" required>
+                    <span class="ml-2">Student Performance Report</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="reportType" value="courseEnrollment" class="form-radio text-blue-600">
+                    <span class="ml-2">Course Enrollment Report</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="reportType" value="gradeDistribution" class="form-radio text-blue-600">
+                    <span class="ml-2">Grade Distribution Report</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Report Generation -->
+        <div class="bg-white p-4 rounded shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-2">Report Generation</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Date Range</label>
+                    <div class="flex space-x-4">
+                        <input type="date" class="border border-gray-300 p-2 rounded w-1/2" required>
+                        <input type="date" class="border border-gray-300 p-2 rounded w-1/2" required>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Course</label>
+                    <select class="border border-gray-300 p-2 rounded w-full">
+                        <option value="">Select a course</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="history">History</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+                <div class="flex justify-end space-x-4">
+                    <button type="submit" class="bg-blue-500 text-white p-2 rounded">Generate PDF</button>
+                    <button type="submit" class="bg-green-500 text-white p-2 rounded">Generate Excel</button>
+                </div>
+            </form>
+        </div>
+
+        <footer class="text-center text-gray-600 mt-4">
+            Copyright 2023
+        </footer>
+    </div>
+</body>
+</html>

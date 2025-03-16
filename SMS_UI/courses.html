@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="img/logo.jpg" alt="School Logo" class="h-12 w-12 mr-2 rounded-full">
+                <h1 class="text-xl font-bold">Courses</h1>
+            </div>
+            <nav class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-500">Profile</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Notifications</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="container mx-auto mt-4">
+       <div class="container mx-auto">
+              <h1 class="text-2xl font-bold mb-4">TeachersName</h1>
+          
+              <!-- Search Bar -->
+              <div class="mb-4">
+                  <input type="text" placeholder="Search by name, ID, or email" class="border border-gray-300 p-2 rounded w-full">
+              </div>
+          
+              <!-- Student List -->
+              <div class="bg-white p-4 rounded shadow-md mb-6">
+                  <div class="flex justify-between mb-4">
+                      <a href="#" class="bg-blue-500 text-white p-2 rounded">Add New Course</a>
+                      <button class="bg-green-500 text-white p-2 rounded">Import Course</button>
+                  </div>
+                  <table class="min-w-full border-collapse border border-gray-300">
+                      <thead>
+                          <tr class="bg-gray-200">
+                              <th class="border border-gray-300 p-2">Name</th>
+                              <th class="border border-gray-300 p-2">Description</th>
+                              <th class="border border-gray-300 p-2">Actions</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td class="border border-gray-300 p-2">Biology</td>
+                              <td class="border border-gray-300 p-2">Science course</td>
+                              <td class="border border-gray-300 p-2">
+                                  <a href="#" class="bg-yellow-500 text-white p-1 rounded">Edit</a>
+                                  <button class="bg-red-500 text-white p-1 rounded">Delete</button>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="border border-gray-300 p-2">Mathematics</td>
+                              <td class="border border-gray-300 p-2">General Course</td>
+                              <td class="border border-gray-300 p-2">
+                                  <a href="#" class="bg-yellow-500 text-white p-1 rounded">Edit</a>
+                                  <button class="bg-red-500 text-white p-1 rounded">Delete</button>
+                              </td>
+                          </tr>
+                          <!-- More student rows can be added here -->
+                      </tbody>
+                  </table>
+          
+                  <!-- Pagination -->
+                  <div class="mt-4 flex justify-between">
+                      <button class="bg-gray-300 p-2 rounded">Previous</button>
+                      <button class="bg-gray-300 p-2 rounded">Next</button>
+                  </div>
+              </div>
+          </div>
+    </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-white shadow mt-6">
+              <div class="container mx-auto p-4 flex justify-between items-center">
+                  <p class="text-gray-600 text-sm"><span class="italic">© 2023 Tension pro . All rights reserved.</span></p>
+                  <div class="space-x-4">
+                      <a href="#" class="text-gray-600 hover:text-blue-500">Help and Support</a>
+                      <a href="#" class="text-gray-600 hover:text-blue-500">User  Manuals</a>
+                      <a href="#" class="text-gray-600 hover:text-blue-500">Contact Support</a>
+                  </div>
+              </div>
+          </footer>
+      
+</body>
+</html>

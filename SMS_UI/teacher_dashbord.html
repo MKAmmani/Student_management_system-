@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="img/logo.jpg" alt="School Logo" class="h-12 w-12 mr-2 rounded-full">
+                <h1 class="text-xl font-bold">Teacher Dashboard</h1>
+            </div>
+            <nav class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-500">Profile</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Notifications</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="container mx-auto mt-4">
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold mb-4">Welcome, <span id="parent-name">TeachersName</span></h2>
+            <p class="mb-4">Here’s what you need to know today.</p>
+
+            <!-- Class Schedule -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">Class Schedule</h3>
+                <ul class="list-disc pl-5">
+                    <li>Math - 9:00 AM</li>
+                    <li>Science - 10:00 AM</li>
+                    <li>History - 11:00 AM</li>
+                </ul>
+            </div>
+
+            <!-- Student List -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">Student List</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <img src="img/munir2.jpg" alt="Student 1" class="h-10 w-10 rounded-full mr-2">
+                        <span>John Doe - Present</span>
+                    </li>
+                    <li class="flex items-center">
+                        <img src="img/munir.jpg" alt="Student 2" class="h-10 w-10 rounded-full mr-2">
+                        <span>Jane Smith - Absent</span>
+                    </li>
+                </ul>
+                <p class="text-blue-500 hover-underline mt-2"><a href="announcement.html">Add Student</a></p>
+            </div>
+
+            <!-- Announcements -->
+            <div>
+                <h3 class="text-xl font-semibold">Announcements</h3>
+                <p>No new announcements today.</p>
+                <p class="text-blue-500 hover-underline"><a href="announcement.html">Make announcement</a></p>
+            </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+            <a href="#" class="bg-blue-500 text-white p-4 rounded-lg shadow hover:bg-blue-600 text-center">Grade Book</a>
+            <a href="#" class="bg-blue-500 text-white p-4 rounded-lg shadow hover:bg-blue-600 text-center">Attendance Tracker</a>
+            <a href="#" class="bg-blue-500 text-white p-4 rounded-lg shadow hover:bg-blue-600 text-center">Lesson Planner</a>
+            <a href="#" class="bg-blue-500 text-white p-4 rounded-lg shadow hover:bg-blue-600 text-center">Communication Tools</a>
+        </div>
+
+        <!-- Student Performance Section -->
+        <h2 class="text-2xl font-semibold mb-4">Student Performance</h2>
+        <div class="bg-white p-6 rounded-lg shadow mt-6 flex justify-between">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-6">
+                <div>
+                    <h3 class="text-xl font-semibold">Student Progress</h3>
+                    <div >
+                                <h2 class="text-2xl font-semibold mb-4 text-center">Student Performance Bar Chart</h2>
+                                <div class="flex items-end space-x-4">
+                                    <div class="flex flex-col items-center">
+                                        <div class="bar bg-blue-500 h-32 w-12 rounded-lg"></div>
+                                        <span class="mt-2">Ahmad Muhammad</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bar bg-blue-500 h-48 w-12 rounded-lg"></div>
+                                        <span class="mt-2">Munir Ammani</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bar bg-blue-500 h-24 w-12 rounded-lg"></div>
+                                        <span class="mt-2">Muhammad Sarki</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bar bg-blue-500 h-36 w-12 rounded-lg"></div>
+                                        <span class="mt-2">Abdulhalim Yaro</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> <!-- Placeholder for chart -->
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Class Performance</h3>
+                            <div >
+                                <h2 class="text-2xl font-semibold mb-4 text-center">Student Performance Bar Chart</h2>
+                                <div class="flex items-end space-x-4">
+                                    <div class="flex flex-col items-center">
+                                        <div class="bar bg-blue-500 h-32 w-12 rounded-lg"></div>
+                                        <span class="mt-2">class1</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bar bg-blue-500 h-48 w-12 rounded-lg"></div>
+                                        <span class="mt-2">class2</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bar bg-blue-500 h-24 w-12 rounded-lg"></div>
+                                        <span class="mt-2">class3</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bar bg-blue-500 h-36 w-12 rounded-lg"></div>
+                                        <span class="mt-2">class4</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> <!-- Placeholder for chart -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-white shadow mt-6">
+              <div class="container mx-auto p-4 flex justify-between items-center">
+                  <p class="text-gray-600 text-sm"><span class="italic">© 2023 Tension pro . All rights reserved.</span></p>
+                  <div class="space-x-4">
+                      <a href="#" class="text-gray-600 hover:text-blue-500">Help and Support</a>
+                      <a href="#" class="text-gray-600 hover:text-blue-500">User  Manuals</a>
+                      <a href="#" class="text-gray-600 hover:text-blue-500">Contact Support</a>
+                  </div>
+              </div>
+          </footer>
+      
+</body>
+</html>

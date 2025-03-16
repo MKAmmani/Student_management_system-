@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="img/logo.jpg" alt="School Logo" class="h-12 w-12 mr-2 rounded-full">
+                <h1 class="text-xl font-bold">Admin Dashboard</h1>
+            </div>
+            <nav class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-500">Profile</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Settings</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="container mx-auto mt-4">
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold mb-4">Welcome, <span id="parent-name">Admin Name</span></h2>
+            <p class="mb-4">Here you can view your children's information and their performance.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- System Statistics -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">System Statistics</h2>
+                    <ul>
+                        <li>Total students enrolled: <span class="font-bold">1,200</span></li>
+                        <li>Total teachers/staff: <span class="font-bold">75</span></li>
+                        <li>Total courses/classes: <span class="font-bold">50</span></li>
+                        <li>Total attendance records: <span class="font-bold">15,000</span></li>
+                    </ul>
+                </div>
+        
+                <!-- Quick Links -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+                    <ul>
+                        <li><a href="/student-registration" class="text-blue-500 hover:underline">Student Registration</a></li>
+                        <li><a href="/course-management" class="text-blue-500 hover:underline">Course Management</a></li>
+                        <li><a href="/report-generation" class="text-blue-500 hover:underline">Report Generation</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <!-- Student Management -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Student Management</h2>
+                    <h3 class="font-semibold">Enrollment</h3>
+                    <ul>
+                        <li><a href="/student-registration" class="text-blue-500 hover:underline">Student Registration</a></li>
+                        <li>New enrollments (last 30 days): <span class="font-bold">50</span></li>
+                        <!--<li>Total students by grade level/department: <span class="font-bold">300 (Grade 10)</span></li> -->
+                        <li>Student enrollment trends: <span class="font-bold">[Graph/Chart]</span></li>
+                    </ul>
+                    <h3 class="font-semibold mt-4">Performance</h3>
+                    <ul>
+                        <li>Average grades by subject/grade level: <span class="font-bold">B+</span></li>
+                        <li>Top-performing students (last semester): <span class="font-bold">John Doe, Jane Smith</span></li>
+                        <li>Students requiring academic support: <span class="font-bold">20</span></li>
+                    </ul>
+                </div>
+        
+                <!-- Academic Management -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Academic Management</h2>
+                    <h3 class="font-semibold">Course Management</h3>
+                    <ul>
+                        <li>Total courses offered: <span class="font-bold">50</span></li>
+                        <li class="text-blue-500 hover:underline"><a href="#">Add / Remove Course</a></li>
+                        <li>Courses with low/high enrollment: <span class="font-bold">Math 101 (Low), Science 201 (High)</span></li>
+                        <li>Course evaluation ratings: <span class="font-bold">4.5/5</span></li>
+                    </ul>
+                    <h3 class="font-semibold mt-4">Teacher Management</h3>
+                    <ul>
+                        <li>Total teachers/staff: <span class="font-bold">75</span></li>
+                        <li>Adding new teachers: <a href="/add-teacher" class="text-blue-500 hover:underline">Add Teacher</a></li>
+                        <li>Teacher workload: <span class="font-bold">3 courses assigned</span></li>
+                        <li>Teacher evaluation ratings: <span class="font-bold">4.2/5</span></li>
+                    </ul>
+                </div>
+        
+                <!-- Attendance and Discipline -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Attendance and Discipline</h2>
+                    <h3 class="font-semibold">Attendance Overview</h3>
+                    <ul>
+                        <li>Total attendance records: <span class="font-bold">15,000</span></li>
+                        <li>Average attendance rate: <span class="font-bold">95%</span></li>
+                        <li>Students with high attendance rates: <span class="font-bold">150</span></li>
+                        <li>Students with low attendance rates: <span class="font-bold">30</span></li>
+                    </ul>
+                    <h3 class="font-semibold mt-4">Discipline Incidents</h3>
+                    <ul>
+                        <li>Total incidents (last month): <span class="font-bold">10</span></li>
+                        <li>Types of incidents: <span class="font-bold">[Graph/Chart]</span></li>
+                        <li>Students with multiple incidents: <span class="font-bold">5</span></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <!-- Reports and Analytics -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Reports and Analytics</h2>
+                    <h3 class="font-semibold">Report Generation</h3>
+                    <ul>
+                        <li><a href="/generate-performance-report" class="text-blue-500 hover:underline">Generate Student Performance Report</a></li>
+                        <li><a href="/generate-attendance-report" class="text-blue-500 hover:underline">Generate Attendance Report</a></li>
+                        <li><a href="/generate-discipline-report" class="text-blue-500 hover:underline">Generate Discipline Report</a></li>
+                    </ul>
+                    <h3 class="font-semibold mt-4">Analytics Dashboard</h3>
+                    <p>Interactive charts and graphs to visualize student data and trends: <span class="font-bold">[Interactive Dashboard]</span></p>
+                </div>
+        
+                <!-- Notifications and Alerts -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Notifications and Alerts</h2>
+                    <h3 class="font-semibold">System Alerts</h3>
+                    <ul>
+                        <li>System updates: <span class="font-bold">Scheduled for 10/15</span></li>
+                        <li>Maintenance: <span class="font-bold">No issues reported</span></li>
+                    </ul>
+                    <h3 class="font-semibold mt-4">Student Alerts</h3>
+                    <ul>
+                        <li>Upcoming birthdays: <span class="font-bold">John Doe (10/12)</span></li>
+                        <li>Attendance milestones: <span class="font-bold">100% attendance for 5 students</span></li>
+                        <li>Academic achievements: <span class="font-bold">Top 10% of the class</span></li>
+                    </ul>
+                </div>
+        
+                <!-- Settings and Configuration -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Settings and Configuration</h2>
+                    <h3 class="font-semibold">System Settings</h3>
+                    <ul>
+                        <li><a href="/user-roles" class="text-blue-500 hover:underline">Configure User Roles</a></li>
+                        <li><a href="/permissions" class="text-blue-500 hover:underline">Set Permissions</a></li>
+                        <li><a href="/notification-preferences" class="text-blue-500 hover:underline">Notification Preferences</a></li>
+                    </ul>
+                    <h3 class="font-semibold mt-4">Integration Settings</h3>
+                    <ul>
+                        <li><a href="/payment-gateway" class="text-blue-500 hover:underline">Payment Gateway Configuration</a></li>
+                        <li><a href="/lms-integration" class="text-blue-500 hover:underline">Learning Management System Integration</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-white shadow mt-6 ">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <p class="text-gray-600 text-sm"><span class="italic">© 2025 Tension pro . All rights reserved.</span></p>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-500"><span class="italic text-blue-500 hover:underline">About the developers</span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</body>
+</html>
